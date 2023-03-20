@@ -1,0 +1,63 @@
+html {
+    font-size: 10px;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: $ff;
+    background: linear-gradient(167.44deg, #08244F 0%, #134CB5 47.38%, #0B42AB 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;   
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;         
+}
+
+.title{
+    @include text($ff-narrow, 700, 4.2rem, 5.5rem, $white);
+    margin-bottom: 20px;
+    @include tablet{
+        font-size: 3.6rem;
+        line-height: 4.5rem;
+    }
+    @include tablet-small{
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include mobile{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.subtitle{
+    @include text($ff, 400, 1.6rem, 2.6rem, $white);
+    @include tablet-small{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+        line-height: 2rem;
+    }
+}
+
+.btn {
+    @include text($ff, 500, 1.4rem, 1.8rem, $black);
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    padding: 1.2rem 2.8rem;
+    background: $white;
+    border-radius: 5px;    
+    cursor: pointer;    
+}

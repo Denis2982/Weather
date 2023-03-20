@@ -1,0 +1,49 @@
+.card {
+    padding: 30px;
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: 4px 4px 2px 2px #9dc6ef;  
+    max-width: 460px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    &__city {
+        @include text($ff-narrow, 700, 2.8rem, 3.3rem, $text);
+        
+        & span{
+            @include text($ff, 400, 1.2rem, 1.2rem, $text);
+            display: inline-block;
+            background: #f51734;
+            border-radius: 6px;
+            padding: 3px 5px;
+            color: $white;
+            vertical-align: text-top;
+            margin-left: 10px;
+        }
+    }
+
+    &__weather {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__temp {
+        @include text($ff-narrow, 700, 7rem, 8.5rem, $text);
+        & sup {
+            font-size: 4rem;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;    
+        object-fit: cover;
+    }
+
+    &__desc {
+        @include text($ff, 400, 2rem, 2.4rem, $text);
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">Прогноз погоды</h1>
+    <form class="header__form" id="form">
+      <input id="inputCity" class="header__form-input" type="text" placeholder="Введите название города">
+      <button class="btn" type="submit">Показать</button>
+    </form>
+  </header>
+   
+  <!-- <div class="card">
+    <h2 class="card__city">London <span>GB</span></h2>
+    <div class="card__weather">
+      <div class="card__temp">11 <sup>℃</sup></div>
+      <img class="card__img" src="./images/clear-cloudy.png" alt="">
+    </div>
+    <div class="card__desc">Cloud</div>
+  </div> -->
+
+  <script src="./condition.js" type="module"></script>
+  <script src="js/main.min.js" type="module"></script>
+</body>
+
+</html>
